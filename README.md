@@ -3,7 +3,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called AD262 - Create Extensions to SAP S/4HANA Using ABAP Cloud and SAP Build.  
+This repository contains the material for the SAP TechEd 2023 session called AD262 - Create Extensions to SAP S/4HANA Using ABAP Cloud and SAP Build.  
 We will create a new service using the ABAP RESTful Application Programming Model (RAP) in an on premise SAP S/4HANA system and then create a process using SAP Build on the SAP Business Technology Platform (BTP). 
 
 ## Overview
