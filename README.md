@@ -1,44 +1,32 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD262)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD262)
-# Session ID - Session Title
+# AD262 - Create Extensions to SAP S/4HANA Using ABAP Cloud and SAP Build
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2022 session called AD262 - Create Extensions to SAP S/4HANA Using ABAP Cloud and SAP Build.  
+We will create a new service using the ABAP RESTful Application Programming Model (RAP) in an on premise SAP S/4HANA system and then create a process using SAP Build on the SAP Business Technology Platform (BTP). 
 
 ## Overview
 
-This session introduces attendees to...
+This session covers the basic app development steps using the ABAP Development Tools (ADT) to create a new OData service based on the ABAP RESTful Application Programming Model (RAP) in an on premise SAP S/4HANA system. This service will then be used in a new process that will be created using SAP Build that runs on the SAP Business Technology Platfrom (BTP). You will see how professional developers code this service in ABAP and then a citizen developer can create the process in a visual way without any coding skills in SAP Build.  
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+To carry out the exercises of this repository, you need to
+- install the ABAP Development Tools (ADT) for the ABAP development parts
+- have a browser ready, preferably Google Chrome, to access the SAP Build
+
+The users for the development environment during the course are email addresses which are provided to you by the hosts.
+
+Go to [Getting Started - Preparation](exercises/ex0/README.md) to find out the installation details, URLs, then start with the first exercise.
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
+- [Getting Started - Preparation](exercises/ex0/README.md)
+- [Part 1 - ABAP ](exercises/rap/README.md)
+- [Part 2 - SAP Build ](exercises/build/exercises/ex1/README.md)
 
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
-
-## Contributing
-Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
-
-## Code of Conduct
-Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
+Start the exercises [here](exercises/rap/exercises/ex1/README.md).
 
 ## How to obtain support
 
