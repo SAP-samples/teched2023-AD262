@@ -30,7 +30,7 @@ We will now create the destination in a BTP subaccount to our Onlineshop API in 
     |  URL   | http://s4h:443 + the copied Onlineshop URL (e.g. /sap/opu/odata4/sap/z_onlineshop_###/srvd_a2x/sap/z_onlineshop_###/0001/) |
     |  Proxy Type   | OnPremise |
     |  Authentication   | BasicAuthentication |
-    |  Location ID   | CALCC |
+    |  Location ID   | CALS4H |
     |  User   | lowcode### |
     |  Password   | ######xx |
 
@@ -39,6 +39,9 @@ We will now create the destination in a BTP subaccount to our Onlineshop API in 
 
 6. Press the `New Property` button again and add 
 `sap.processautomation.enabled` with value `true`
+
+6. Press the `New Property` button again and add 
+`sap.build.usage` with value `RAP`
 
 ![destination](images/100.png)
 
