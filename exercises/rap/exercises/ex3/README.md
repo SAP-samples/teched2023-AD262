@@ -136,23 +136,12 @@ annotate view ZC_ONLINESHOP_XXX with
   
   @UI.lineItem: [ {
     position: 40 , 
-    label: 'PurchaseRequisition',
+    label: 'Overall Status',
     importance: #MEDIUM
   } ]
   @UI.identification: [ {
-    label: 'PurchaseRequisition',
+    label: 'Overall Status',
     position: 40 
-  } ]
-  purchaserequisition;
-  
-  @UI.lineItem: [ {
-    position: 50 , 
-    label: 'Overall Status',
-    importance: #MEDIUM
-  } ]
-  @UI.identification: [ {
-    label: 'Overall Status',
-    position: 50 
   } ]
   overallstatus;
   

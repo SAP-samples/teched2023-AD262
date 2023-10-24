@@ -53,7 +53,6 @@ define table zonlineshop_XXX {
   order_id              : abap.char(10) not null;
   product               : abap.char(40) not null;
   quantity              : abap.int4;
-  purchase_requisition  : abap.char(10);
   overall_status        : abap.char(40);
   created_by            : abp_creation_user;
   created_at            : abp_creation_tstmpl;
