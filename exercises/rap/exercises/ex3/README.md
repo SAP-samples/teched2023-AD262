@@ -173,7 +173,6 @@ For fields that are read-only and that are not read from the value help we have 
   2. Add the following list of fields to mark them as read-only  
   <pre lang="ABAP">
    OrderID,
-   PurchaseRequisition,
    OverallStatus,
   </pre>
 
