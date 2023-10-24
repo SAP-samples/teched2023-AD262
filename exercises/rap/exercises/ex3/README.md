@@ -192,7 +192,7 @@ For fields that are read-only and that are not read from the value help we have 
 
   4. In the **Project Explorer** under `Business Services`->`Service Bindings`->`ZUI_ONLINESHOP_O4_###` check the UI using the Fiori Elements preview. 
 
-  On the list, press **Create** and you should see a form like this, where **Order ID**, **Purchase Requisition** and **Overall Status** are text not input fields:
+  On the list, press **Create** and you should see a form like this, where **Order ID** and **Overall Status** are text not input fields:
 
   ![adapt_bdef](images/230_adapt_bdef.png)  
  
@@ -255,7 +255,7 @@ CLASS lcl_OnlineShop DEFINITION INHERITING FROM cl_abap_behavior_handler.
 
   2. Save ![save icon](../../images/adt_save.png) and activate ![activate icon](../../images/adt_activate.png) the changes.
 
-  3. Use the quick fix **Ctrl+1** (**Command+1** on Mac) to generate the appropriate methods in the behavior definition class.
+  3. Use the quick fix by either clicking on  ![quick_fix](images/305_define_determinations.png)  or with the cursor in the `determination` line by **Ctrl+1** (**Command+1** on Mac) to generate the appropriate methods in the behavior definition class.
 
   ![define_determinations](images/310_define_determinations.png) 
 
@@ -263,7 +263,9 @@ CLASS lcl_OnlineShop DEFINITION INHERITING FROM cl_abap_behavior_handler.
 
    ![define_determinations](images/312_define_determinations.png) 
 
-  5. Add the code snippet to implement the method `CalculateOrderID` for the determination `createOrderID`. Replace 
+  5. Add the code snippet to implement the method `CalculateOrderID` for the determination `createOrderID`:
+  
+  Replace 
   <pre lang="ABAP">
       METHOD CalculateOrderID.
       ENDMETHOD.
@@ -304,8 +306,6 @@ CLASS lcl_OnlineShop DEFINITION INHERITING FROM cl_abap_behavior_handler.
                       ) )
         FAILED DATA(failed).
 
-      MODIFY ENTITIES OF zr_onlineshop_### IN LOCAL MODE
-        ENTITY OnlineShop EXECUTE CreatePurchaseRequisition FROM CORRESPONDING #( keys ).
     ENDIF.
 
   ENDMETHOD.
