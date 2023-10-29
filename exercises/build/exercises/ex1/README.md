@@ -50,6 +50,8 @@ We will now create the destination in a BTP subaccount to our Onlineshop API in 
 
 8. Press `Check Connection`: You should get a pop up that says `Connection to "Onlineshop_###" successful`
 
+<!--
+
 ## Exercise 1.2: Download the OData metadata document of the Onlineshop API
 
 In this exercise we will download the OData metadata document to a file to later use it for a definiton of an Action for SAP Build.
@@ -72,7 +74,9 @@ In this exercise we will download the OData metadata document to a file to later
 
 5. Open a text editor on your computer, paste the copied content using `Ctrl + V` (`Command + V` on Mac) and save the file as `Onlineshop_###_metadata.xml` to a location of your liking on your computer
 
-## Exercise 1.3: Create Actions from the Onlineshop API
+-->
+
+## Exercise 1.2: Create Actions from the Onlineshop API
 
 1. Open the [lobby](https://lcapteched.eu10.build.cloud.sap/lobby) in the browser with
 
@@ -82,31 +86,39 @@ In this exercise we will download the OData metadata document to a file to later
 
     that is provided by the instructors by the workshop (note this is not the same user as for the ABAP development tools, it is a BTP user)
 
-2. Press `Create`
+2. Press `Àctions` in the left side pane
+
+![lobby](images/145.png)
+
+3. Press `Create`
 
 ![lobby](images/150.png)
 
-3. Select `Build an Automated Process`
+4. On the `Choose an API Source` dialog select `ABAP RESTful Application Programming Model`
 
 ![lobby](images/155.png)
 
-4. Select `Actions`
+5. Select the destination `Onlineshop_###` that your created earlier in this chapter, that points to your RAP service
 
 ![lobby](images/160.png)
 
-5. As Project Name choose `Onlineshop###Action`. Use the `Browse` button to locate the metadata file that you have saved in the previous step on your computer. Press `Create` 
+6. Explore the methods of your RAP API and press `Next`
+
+![lobby](images/162.png)
+
+7. As Project Name choose `Onlineshop###Action`. Press `Create` 
 
 ![lobby](images/165.png)
 
-6. Expand the entry `onlineshop` and select both, the `POST /onlineshop Add new entry to onlineshop` and the `Get /onlineshop Get entities from onlineshop`. Press `Add`
+8. Expand the entry `onlineshop` and select both, the `POST /onlineshop Add new entry to onlineshop` and the `Get /onlineshop Get entities from onlineshop`. Press `Add`
 
 ![lobby](images/170.png)
 
-7. The 2 actions are now visible, select the `POST` one. In the right upper corner press the `Settings` button that looks like a gear wheel.
+9. The 2 actions are now visible, select the `POST` one. In the right upper corner press the `Settings` button that looks like a gear wheel.
 
 ![lobby](images/180.png)
 
-## Exercise 1.4: Test Actions from the Onlineshop API
+## Exercise 1.3: Test Actions from the Onlineshop API
 
 1. Switch `Enable CSRF` to `yes` and press `Save`
 
@@ -120,7 +132,7 @@ In this exercise we will download the OData metadata document to a file to later
 
 ![lobby](images/195.png)
 
-## Exercise 1.5: Release the Action and Publish to Library
+## Exercise 1.4: Release the Action and Publish to Library
 
 In order to use the action inside SAP Build products like Process Automation, it has to be released first. Releasing means that the current state of the action is stored in an imutable way. Once the project is released, it can be published to library, which means that it is available inside SAP Build products like Process Automation, it can be discovered and used there.
 
@@ -132,19 +144,25 @@ In order to use the action inside SAP Build products like Process Automation, it
 
 ![lobby](images/205.png)
 
-3. After you released the action, in the same upper right corner the button has changed to `release to library`, press it 
+3. Press on the `Èditable` button on the top and select you released version
+
+![lobby](images/207.png)
+
+4. After you released the action, in the same upper right corner the button has changed to `Publish to library`, press it 
 
 ![lobby](images/210.png)
 
-4. Confirm that you want to publish, pressing the button
+5. Confirm that you want to publish, pressing the button
 
 ![lobby](images/215.png)
 
-## Excercise 1.6: Add the Destination to the SAP Build Settings
+## Excercise 1.5: Add the Destination to the SAP Build Settings
 
 You have set up a destination in the BTP Cockpit to test our new actions and in the last step made the actions available for usage in SAP Build Process Automation. You now also need to register the destination with SAP Build to be used in a real environment of a process, not just for tests of actions.
 
-1. In the SAP Build choose `Settings` and then `Destinations` in the left pane.
+1. In the SAP Build lobby choose `Control Tower` on the left side pane and then the `Destinations` tile.
+
+![lobby](images/85.png)
 
 2. Press `New Destination` and search for your destination `Onlineshop_###` where of course `###` is your group ID. Select the destination and press `Add`.
 
